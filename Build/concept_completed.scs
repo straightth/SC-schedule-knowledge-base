@@ -1,0 +1,16 @@
+ concept_completed <- sc_node_not_relation;
+
+=> nrel_main_idtf: 
+ 	[Выполненная задача *] (*<-lang_ru;;*);
+	[Completed task*] (*<-lang_en;;*);
+
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (Задача)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Выполненная здача - задача, которая отмечена, как завершенная] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    	*);;
+	*);;

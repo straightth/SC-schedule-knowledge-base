@@ -1,0 +1,28 @@
+concept_task_list <- sc_node_not_relation;
+
+=> nrel_main_idtf: 
+ 	[Список задач*] (*<-lang_ru;;*);
+	[Task list*] (*<-lang_en;;*);
+
+
+<- rrel_key_sc_element: ... (*
+	<- definition;;
+    => nrel_main_idtf:
+      [Опр. (Список задач)] (* <- lang_ru;; *);;
+
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+        [Задача - множество задач] (* <- lang_ru;; => nrel_format: format_html;;*);;
+    	*);;
+	*);
+
+ <- rrel_key_sc_element: ... (*
+    <- explanation;;
+    => nrel_main_idtf:
+      [Утв.(Задача)] (* <- lang_ru;; *);;
+    <= nrel_sc_text_translation: ... (*
+      -> rrel_example:
+      [Список задач имеет все свойства множеств, но является частным случаем (элементом множества может быть либо задача, либо служебная информация о списке дел)]
+      (*<-lang_ru;; => nrel_format: format_html;;*);;
+    	*);;
+	*);;
